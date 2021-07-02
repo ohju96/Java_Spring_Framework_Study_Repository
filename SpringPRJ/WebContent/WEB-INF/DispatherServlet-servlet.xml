@@ -14,7 +14,23 @@
     http://www.springframework.org/schema/context
     http://www.springframework.org/schema/context/spring-context.xsd">
 	<!-- 어노테이션 사용하기 -->
-	<mvc:annotation-driven />
+	
+	<!--  <mvc:annotation-driven />-->
+	<mvc:annotation-driven>
+		<mvc:message-converters>
+        <!-- @ResponseBody Content-Type:application/json;charset=UTF-8  -->
+        <bean class="org.springframework.http.converter.StringHttpMessageConverter">
+            <property name="supportedMediaTypes">
+                <list>
+                    <value>text/html;charset=UTF-8</value>
+                </list>
+            </property>
+        </bean>
+    </mvc:message-converters>
+</mvc:annotation-driven>
+	
+		
+	
 	<bean class="org.springframework.web.servlet.mvc.support.ControllerClassNameHandlerMapping" />
 	<context:component-scan base-package="poly.controller" use-default-filters="false">
 		<context:include-filter type="annotation" expression="org.springframework.stereotype.Controller"/>
