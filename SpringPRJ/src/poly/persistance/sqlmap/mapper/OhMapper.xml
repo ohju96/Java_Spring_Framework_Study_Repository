@@ -7,4 +7,16 @@
 	<select id="getOhList" resultType="OhDTO">
 	SELECT * FROM DUAL
 	</select>
+	
+<!-- ================================ 로그인 =========================================================== -->
+
+<select id="checklogin" parameterType="OhDTO" resultType="OhDTO">
+SELECT *
+FROM OH1_INFO
+WHERE OH_ID= #{oh_id} AND OH_PWD= #{oh_pwd}
+
+</select>
+
+
+<!-- ================================ 회원가입 =========================================================== -->
 </mapper>

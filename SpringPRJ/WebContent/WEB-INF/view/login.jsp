@@ -7,10 +7,10 @@
 <title>Insert title here</title>
 </head>
 <body>
-<form action="checklogin.do" method="Post">
+<form action="/checklogin.do" method="Post">
 	아이디 : <input type="text" name="id">
 	비밀번호 : <input type="password" name="pwd">
-	<input type="submit" vlaue="login">
+	<input type="submit" value="login">
 </form>
 </body>
 </html>

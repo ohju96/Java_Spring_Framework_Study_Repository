@@ -10,18 +10,17 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 import poly.dto.OhDTO;
 import poly.service.IOhService;
-import poly.service.impl.OhService;
 
 
 @Controller
 public class OhController {
 	
-	private Logger log = Logger.getLogger(this.getClass());
-	
-	
-	@Resource(name = "OhSevice")
+
+	@Resource(name = "OhService")
 	private IOhService OhService;
 	
+	private Logger log = Logger.getLogger(this.getClass());
+		
 	@RequestMapping(value="index")
 	public String Index() {
 		log.info(this.getClass());
@@ -31,7 +30,7 @@ public class OhController {
 	
 //======================================  로그인  ========================================================================
 
-	@RequestMapping(value="Oh/login")
+	@RequestMapping(value="login")
 	public String login() {
 		log.info("로그인 페이지 출력"	);
 		
@@ -59,13 +58,16 @@ public class OhController {
 		log.info("PWD : " + oDTO.getOh_pwd());
 		
 		int res = OhService.checklogin(oDTO);
+		log.info(res);
 		
 		String result = "";	
 		
+		
 		if ( res == 0) {
 			result = "fail";
-		} else {
+		} else if (res == 1){
 			result = "success";
+
 		}
 		
 		return result;

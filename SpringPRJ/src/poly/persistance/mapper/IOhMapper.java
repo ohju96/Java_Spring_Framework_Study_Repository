@@ -10,5 +10,8 @@ public interface IOhMapper {
 
 	//게시판 리스트
 	List<OhDTO> getOhList() throws Exception;
+
+	OhDTO checklogin(OhDTO oDTO) throws Exception;
+
 	
 }

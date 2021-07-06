@@ -6,8 +6,6 @@ public class OhDTO {
 	private String oh_seq;
 	private String oh_id;
 	private String oh_pwd;
-	
-	
 	public String getOh_seq() {
 		return oh_seq;
 	}
@@ -26,6 +24,8 @@ public class OhDTO {
 	public void setOh_pwd(String oh_pwd) {
 		this.oh_pwd = oh_pwd;
 	}
+	
+
 
 
 }
