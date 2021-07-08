@@ -14,9 +14,27 @@
 SELECT *
 FROM OH1_INFO
 WHERE OH_ID= #{oh_id} AND OH_PWD= #{oh_pwd}
-
 </select>
 
-
 <!-- ================================ 회원가입 =========================================================== -->
+
+<insert id="checkregister" parameterType="OhDTO">
+INSERT INTO OH1_INFO(
+OH_ID,
+OH_PWD,
+OH_NAME
+)VALUES(
+#{oh_id},
+#{oh_pwd},
+#{oh_name}
+)
+</insert>
+
+<!-- ================================ 회원가입 아이디 중복 확인 =========================================================== -->
+	
+<select id="checkId" parameterType="OhDTO" resultType="OhDTO">
+SELECT * FROM OH1_INFO
+WHERE OH_ID = #{oh_id}
+</select>	
+	
 </mapper>
