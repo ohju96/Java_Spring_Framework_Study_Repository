@@ -74,4 +74,49 @@ public class OhController {
 	}
 	
 //======================================  회원가입  ==============================================================================
+
+	@RequestMapping(value="register")
+	public String register() {
+		log.info("회원가입 페이지 출력");
+		
+		return "/register";
+	}
+	
+	@RequestMapping(value="/checkregister")
+	@ResponseBody
+	public String checkregister (HttpServletRequest request) throws Exception{
+		
+		log.info("회원가입 시작");
+		
+		String id = request.getParameter("id");
+		String pwd = request.getParameter("pwd");
+		String name = request.getParameter("name");
+		
+		OhDTO oDTO = new OhDTO();
+		
+		oDTO.setOh_id(id);
+		oDTO.setOh_pwd(pwd);
+		oDTO.setOh_name(name);
+		
+		String result = "";
+		
+		int res = OhService.checkregister(oDTO);
+		
+		if(res==0) {
+			result = "가입된 이메일입니다.";
+		}else if(res == 1) {
+			result = "회원가입 성공";
+		}else{
+			result = "오류입니다.";
+		}
+		
+		return result;
+		
+	}
+	
+//======================================  회원가입  ==============================================================================
+
+
+	
+	
 }

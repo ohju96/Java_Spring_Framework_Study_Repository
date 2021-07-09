@@ -6,6 +6,14 @@ public class OhDTO {
 	private String oh_seq;
 	private String oh_id;
 	private String oh_pwd;
+	private String oh_name;
+	
+	public String getOh_name() {
+		return oh_name;
+	}
+	public void setOh_name(String oh_name) {
+		this.oh_name = oh_name;
+	}
 	public String getOh_seq() {
 		return oh_seq;
 	}
