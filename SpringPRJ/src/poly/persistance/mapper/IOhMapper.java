@@ -13,5 +13,9 @@ public interface IOhMapper {
 
 	OhDTO checklogin(OhDTO oDTO) throws Exception;
 
+	OhDTO checkID(OhDTO oDTO) throws Exception;
+
+	void checkregister(OhDTO oDTO) throws Exception;
+
 	
 }

@@ -15,7 +15,7 @@
 </form>
 <br>
 
-<form action="/Oh/register.do" method="Post">
+<form action="/register.do" method="Post">
 <input type="submit" value="Create Account">
 </form>
 

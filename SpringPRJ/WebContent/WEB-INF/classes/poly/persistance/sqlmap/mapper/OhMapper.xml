@@ -32,7 +32,7 @@ OH_NAME
 
 <!-- ================================ 회원가입 아이디 중복 확인 =========================================================== -->
 	
-<select id="checkId" parameterType="OhDTO" resultType="OhDTO">
+<select id="checkID" parameterType="OhDTO" resultType="OhDTO">
 SELECT * FROM OH1_INFO
 WHERE OH_ID = #{oh_id}
 </select>	

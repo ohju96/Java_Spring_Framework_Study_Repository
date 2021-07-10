@@ -92,6 +92,10 @@ public class OhController {
 		String pwd = request.getParameter("pwd");
 		String name = request.getParameter("name");
 		
+		log.info(id);
+		log.info(pwd);
+		log.info(name);
+		
 		OhDTO oDTO = new OhDTO();
 		
 		oDTO.setOh_id(id);
