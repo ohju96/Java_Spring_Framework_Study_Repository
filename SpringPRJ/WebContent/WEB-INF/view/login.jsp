@@ -19,5 +19,9 @@
 <input type="submit" value="Create Account">
 </form>
 
+<form action="/changepassword.do" method="Post">
+<input type="submit" value="Change Password">
+</form>
+
 </body>
 </html>
