@@ -7,5 +7,7 @@ public interface IOhService {
 	int checklogin(OhDTO oDTO) throws Exception;
 
 	int checkregister(OhDTO oDTO) throws Exception;
+
+	int updatepwd(OhDTO oDTO) throws Exception;
 	
 }

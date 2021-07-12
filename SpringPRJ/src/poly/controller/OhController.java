@@ -118,9 +118,46 @@ public class OhController {
 		
 	}
 	
-//======================================  회원가입  ==============================================================================
+//======================================  비밀번호변경  ==============================================================================
 
+@RequestMapping(value = "updatepwd")
+public String chpwd() {
+	log.info("비밀번호변경 페이지 출력");
+	
+	return "/updatepwd";
+}
 
+@RequestMapping(value = "/changepassword")
+@ResponseBody
+public String updatepwd (HttpServletRequest request) throws Exception {
+	
+	log.info("비밀번호변경시작");
+	
+	String id = request.getParameter("id");
+	String pwd = request.getParameter("pwd");
+	
+	log.info(id);
+	log.info(pwd);
+	
+	OhDTO oDTO = new OhDTO();
+	
+	oDTO.setOh_id(id);
+	oDTO.setOh_pwd(pwd);
+	
+	int res = OhService.updatepwd(oDTO);
+	
+	String result = "";
+	
+	log.info(res);
+	
+	if(res==0) {
+		result = "비밀번호변경실패";
+	}else{
+		result = "비밀번호변경성공";
+	}
+	
+	return result;
+}
 	
 	
 }
