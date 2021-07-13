@@ -36,5 +36,15 @@ OH_NAME
 SELECT * FROM OH1_INFO
 WHERE OH_ID = #{oh_id}
 </select>	
-	
+
+<!-- ================================ 비밀번호변경 =========================================================== -->
+
+<update id="updatepwd" parameterType="OhDTO">
+UPDATE OH1_INFO
+SET OH_PWD = #{oh_pwd}
+WHERE OH_ID = #{oh_id}
+</update>
+
+<!-- ================================ 끝 =========================================================== -->
+
 </mapper>
