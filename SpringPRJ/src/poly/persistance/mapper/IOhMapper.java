@@ -17,7 +17,7 @@ public interface IOhMapper {
 
 	void checkregister(OhDTO oDTO) throws Exception;
 
-	OhDTO updatepwd(OhDTO oDTO) throws Exception;
+	void updatepwd(OhDTO oDTO) throws Exception;
 
 	
 }

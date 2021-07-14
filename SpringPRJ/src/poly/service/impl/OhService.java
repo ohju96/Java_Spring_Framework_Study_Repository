@@ -63,12 +63,15 @@ public class OhService implements IOhService{
 		
 		int res = 0;
 		
-		oDTO = OhMapper.updatepwd(oDTO);
+		OhDTO hDTO = new OhDTO();
 		
+		hDTO = OhMapper.checkID(oDTO);
 		
-		if(oDTO != null) {
-			log.info(oDTO);
+		log.info(hDTO);
+		
+		if(hDTO != null) {
 			log.info("비밀번호변경시작");
+			OhMapper.updatepwd(oDTO);
 			log.info("OhService : " + oDTO);
 			res = 1;
 			log.info("비밀번호변경 완료");
