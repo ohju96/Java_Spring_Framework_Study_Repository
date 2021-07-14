@@ -56,5 +56,29 @@ public class OhService implements IOhService{
 		return res;
 	}
 	
+//==================================== 비밀번호변경 ========================================================================
+
+	@Override
+	public int updatepwd(OhDTO oDTO) throws Exception {
+		
+		int res = 0;
+		
+		oDTO = OhMapper.updatepwd(oDTO);
+		
+		
+		if(oDTO != null) {
+			log.info(oDTO);
+			log.info("비밀번호변경시작");
+			log.info("OhService : " + oDTO);
+			res = 1;
+			log.info("비밀번호변경 완료");
+		}else {
+			log.info("비밀번호변경 전");
+		}
+		
+		
+		return res;
+	}
+	
 
 }

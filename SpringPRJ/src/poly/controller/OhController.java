@@ -120,14 +120,14 @@ public class OhController {
 	
 //======================================  비밀번호변경  ==============================================================================
 
-@RequestMapping(value = "updatepwd")
+@RequestMapping(value = "changepassword")
 public String chpwd() {
 	log.info("비밀번호변경 페이지 출력");
 	
-	return "/updatepwd";
+	return "/changepassword";
 }
 
-@RequestMapping(value = "/changepassword")
+@RequestMapping(value = "/oh/changepassword")
 @ResponseBody
 public String updatepwd (HttpServletRequest request) throws Exception {
 	
