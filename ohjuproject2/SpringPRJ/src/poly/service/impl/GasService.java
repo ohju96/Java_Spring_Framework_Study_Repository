@@ -4,6 +4,7 @@ import javax.annotation.Resource;
 
 import org.springframework.stereotype.Service;
 
+import poly.dto.GasDTO;
 import poly.persistance.mapper.IGasMapper;
 import poly.service.IGasService;
 
@@ -11,6 +12,17 @@ import poly.service.IGasService;
 public class GasService implements IGasService{
 	
 	@Resource(name="GasMapper")
-	private IGasMapper gasMapper;
+	private IGasMapper GasMapper;
+
+	@Override
+	public int gaslogin(GasDTO gDTO) throws Exception {
+		
+		int res = 0;
+		
+		GasDTO aDTO = new GasDTO();
+		aDTO = GasMapper.gaslogin(gDTO);
+		
+		return res;
+	}
 
 }

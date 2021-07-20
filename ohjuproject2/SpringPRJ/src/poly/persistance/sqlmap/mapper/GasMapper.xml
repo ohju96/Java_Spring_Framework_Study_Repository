@@ -7,4 +7,11 @@
 	<select id="getGasList" resultType="GasDTO">
 	SELECT * FROM DUAL
 	</select>
+	
+	<!-- 로그인 -->
+	<select id="gaslogin" parameterType="GasDTO" resultType="GasDTO">
+	select *
+	from user_info
+	where USER_ID= #{user_id} and USER_PWD= #{user_pwd}
+	</select>
 </mapper>

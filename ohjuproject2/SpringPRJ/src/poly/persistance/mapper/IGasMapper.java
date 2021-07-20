@@ -10,5 +10,7 @@ public interface IGasMapper {
 
 	//게시판 리스트
 	List<GasDTO> getGasList() throws Exception;
+
+	GasDTO gaslogin(GasDTO gDTO) throws Exception;
 	
 }
