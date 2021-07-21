@@ -56,19 +56,19 @@ public class GasController {
 	}
 	
 	
-	//################  회원가입 페이지  ###################
-	@RequestMapping(value="register")
-	public String register() {
-		log.info(this.getClass());
-		
-		return "/register";	
-	}
-	
-	//################  비밀번호 찾기 페이지  ###################	
-	@RequestMapping(value="forgotpassword")
-	public String forgotpassword() {
-		log.info(this.getClass());
-		
-		return "/forgotpassword";	
-	}
+	/*
+	 * //################ 회원가입 페이지 ###################
+	 * 
+	 * @RequestMapping(value="register") public String register() {
+	 * log.info(this.getClass());
+	 * 
+	 * return "/register"; }
+	 * 
+	 * //################ 비밀번호 찾기 페이지 ###################
+	 * 
+	 * @RequestMapping(value="forgotpassword") public String forgotpassword() {
+	 * log.info(this.getClass());
+	 * 
+	 * return "/forgotpassword"; }
+	 */
 }
