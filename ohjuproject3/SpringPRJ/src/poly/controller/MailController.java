@@ -57,5 +57,3 @@ public class MailController {
 		return "/mail/sendMailResult";
 	}
 }
-
-
