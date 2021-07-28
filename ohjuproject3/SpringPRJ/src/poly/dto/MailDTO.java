@@ -6,6 +6,7 @@ public class MailDTO {
 	String title;
 	String contents;
 	
+	
 	public String getToMail() {
 		return toMail;
 	}
