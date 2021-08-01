@@ -22,5 +22,48 @@ public class MainController {
 			
 			return "/welcome";
 	}
+		
+		@RequestMapping(value="about")
+		public String about() {
+			log.info(this.getClass());
+			
+			return "/about";
+	}
+		
+		@RequestMapping(value="contact")
+		public String contact() {
+			log.info(this.getClass());
+			
+			return "/contact";
+	}
+		
+		@RequestMapping(value="resume")
+		public String resume() {
+			log.info(this.getClass());
+			
+			return "/resume";
+	}
+		
+		@RequestMapping(value="services")
+		public String services() {
+			log.info(this.getClass());
+			
+			return "/services";
+	}
+		
+		@RequestMapping(value="testimonials")
+		public String testimonials() {
+			log.info(this.getClass());
+			
+			return "/testimonials";
+	}
+		
+		@RequestMapping(value="works")
+		public String works() {
+			log.info(this.getClass());
+			
+			return "/works";
+	}
+		
 			
 }

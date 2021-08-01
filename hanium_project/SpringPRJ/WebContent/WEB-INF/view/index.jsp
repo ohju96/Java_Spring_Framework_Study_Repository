@@ -98,7 +98,7 @@
                                             <div></div>
                                             <div></div>
                                         </div>
-                                        <a href="about.html" class="hex-content">
+                                        <a href="about.do" class="hex-content">
                                             <span class="hex-content-inner">
                                                 <span class="icon">
                                                     <i class="tf-profile-male"></i>
@@ -119,7 +119,7 @@
                                             <div></div>
                                             <div></div>
                                         </div>
-                                        <a href="services.html" class="hex-content">
+                                        <a href="services.do" class="hex-content">
                                             <span class="hex-content-inner">
                                                 <span class="icon">
                                                     <i class="tf-tools-2"></i>
@@ -140,7 +140,7 @@
                                             <div></div>
                                             <div></div>
                                         </div>
-                                        <a href="resume.html" class="hex-content">
+                                        <a href="resume.do" class="hex-content">
                                             <span class="hex-content-inner">
                                                 <span class="icon">
                                                     <i class="tf-tools"></i>
@@ -161,7 +161,7 @@
                                             <div></div>
                                             <div></div>
                                         </div>
-                                        <a href="works.html" class="hex-content">
+                                        <a href="works.do" class="hex-content">
                                             <span class="hex-content-inner">
                                                 <span class="icon">
                                                     <i class="tf-briefcase2"></i>
@@ -182,7 +182,7 @@
                                             <div></div>
                                             <div></div>
                                         </div>
-                                        <a href="testimonials.html" class="hex-content">
+                                        <a href="testimonials.do" class="hex-content">
                                             <span class="hex-content-inner">
                                                 <span class="icon">
                                                     <i class="tf-chat"></i>
@@ -203,7 +203,7 @@
                                             <div></div>
                                             <div></div>
                                         </div>
-                                        <a href="contact.html" class="hex-content">
+                                        <a href="contact.do" class="hex-content">
                                             <span class="hex-content-inner">
                                                 <span class="icon">
                                                     <i class="tf-envelope2"></i>
