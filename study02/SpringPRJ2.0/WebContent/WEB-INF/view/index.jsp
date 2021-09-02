@@ -7,6 +7,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-	오주현 서버 완료했습니다.
+	서버 완료
 </body>
 </html>
