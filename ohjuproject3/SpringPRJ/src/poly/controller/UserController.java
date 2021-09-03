@@ -17,5 +17,13 @@ public class UserController {
 		
 		return "/index";
 	}
+	
+	// ==================== 로그인 화면을 보여준다.
+	@RequestMapping(value="")
+	public String Login() {
+		log.info(this.getClass());
+		return "/Login";
+	}
+	
 			
 }

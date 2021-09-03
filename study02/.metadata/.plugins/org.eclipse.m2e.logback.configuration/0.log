@@ -145,3 +145,8 @@
 2021-09-02 16:59:36,495 [Worker-15: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\ohjuproject_file\study02\SpringPRJ2.0\src\main\resources
 2021-09-02 16:59:36,498 [Worker-15: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
 2021-09-02 16:59:36,501 [Worker-15: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\ohjuproject_file\study02\SpringPRJ2.0\src\test\resources
+2021-09-03 18:05:47,386 [Worker-4: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2021-09-03 18:05:57,120 [Worker-4: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-09-03 18:05:57,122 [Worker-4: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\ohjuproject_file\study02\SpringPRJ2.0\src\main\resources
+2021-09-03 18:05:57,126 [Worker-4: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-09-03 18:05:57,127 [Worker-4: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\ohjuproject_file\study02\SpringPRJ2.0\src\test\resources
