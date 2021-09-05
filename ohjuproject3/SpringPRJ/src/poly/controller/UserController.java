@@ -5,6 +5,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 // 카카오 로그인 해보기
+// 클래시스로 빌드 패스 변경
 
 @Controller
 public class UserController {
