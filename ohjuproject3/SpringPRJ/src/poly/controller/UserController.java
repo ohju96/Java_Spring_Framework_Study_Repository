@@ -6,6 +6,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 // 카카오 로그인 해보기
 // 클래시스로 빌드 패스 변경
+// 빌드 패스 변경시 파일 사라지는 게 맞음.
 
 @Controller
 public class UserController {
