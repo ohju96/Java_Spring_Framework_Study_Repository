@@ -22,7 +22,7 @@ public class MailController {
 	@Resource(name = "MailService")
 	private IMailService mailService;
 	
-	@RequestMapping(value = "mail/sendMail", method = RequestMethod.GET)
+	@RequestMapping(value = "mail/sendMail", method = RequestMethod.POST)
 	public String sendMail(HttpServletRequest request, HttpServletResponse response, ModelMap model) throws Exception {
 		
 		log.info(this.getClass().getName() + "mail.sendMail start !");
@@ -49,10 +49,15 @@ public class MailController {
 		
 		log.info(this.getClass().getName() + "mail.sendMail end !");
 		
-	
-		
 		return "/mail/sendMailResult";
 		
+	}
+	
+	@RequestMapping(value = "mail/mailForm")
+	public String mailForm(HttpServletRequest request, HttpServletResponse response, ModelMap model) throws Exception {
+		log.info(this.getClass().getName() + "mail.mailForm start !");
+		log.info(this.getClass().getName() + "mail.mailForm end !");
+		return "mail/mailForm";
 	}
 
 }
