@@ -17,15 +17,15 @@ import poly.dto.MailDTO;
 import poly.service.IMailService;
 import poly.util.CmmUtil;
 
-@Service("MailService")
+@Service("MailService") // 이 클래스를 서비스로 사용한다고 스프링 프레임워크에 알림과 동시에 이 클래스 이름을 MailService로 지정한다.
 public class MailService implements IMailService {
 	
-	private Logger log = Logger.getLogger(this.getClass());
+	private Logger log = Logger.getLogger(this.getClass()); // 로그를 찍기 위한 메소드
 	
 	final String host = "smtp.naver.com";
 	final String user = "아이디";
 	final String password = "비밀번호";
-	
+	// 위에는 본인의 메일 아이디 @ 포함, 암호를 입력하면 되고 깃 허브에 올릴 때 꼭 지워서 올려야한다. 아니면 해킹당한다.
 	
 	@Override
 	public int doSendMail(MailDTO pDTO) {
