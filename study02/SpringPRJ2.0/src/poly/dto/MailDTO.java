@@ -1,5 +1,5 @@
 package poly.dto;
-
+// DB 정보를 받아온다.
 public class MailDTO {
 	
 	private String toMail;
