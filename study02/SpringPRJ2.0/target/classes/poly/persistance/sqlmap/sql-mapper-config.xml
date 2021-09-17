@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "http://mybatis.org/dtd/mybatis-3-config.dtd">
-
+<!-- 사용할 DTO는 모두 다 등록해야 한다. -->
 <configuration>
     <typeAliases>
     	<!-- 사용할 DTO 등록  -->
