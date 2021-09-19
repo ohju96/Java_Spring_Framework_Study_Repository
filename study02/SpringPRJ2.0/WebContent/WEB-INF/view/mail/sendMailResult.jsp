@@ -25,6 +25,6 @@ if (jspRes.equals("1")){
 	out.println(toMail + "로 메일 전송이 실패하였습니다.");
 }
 %>
-
+<!-- 메일을 보낸 정보에 대한 성공 및 실패 메시지를 띄워준다. -->
 </body>
 </html>
