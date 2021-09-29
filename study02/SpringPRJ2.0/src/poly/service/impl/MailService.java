@@ -24,7 +24,7 @@ public class MailService implements IMailService {
 	
 	final String host = "smtp.naver.com";
 	final String user = "아이디";
-	final String password = "비밀번호";
+	final String password = "비번";
 	// 위에는 본인의 메일 아이디 @ 포함, 암호를 입력하면 되고 깃 허브에 올릴 때 꼭 지워서 올려야한다. 아니면 해킹당한다.
 	
 	@Override
