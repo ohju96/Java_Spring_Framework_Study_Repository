@@ -13,6 +13,7 @@ import poly.util.CmmUtil;
 import poly.util.DateUtil;
 import poly.util.EncryptUtil;
 
+//Service 단을 만들고 이름을 넣어줘야 한다.
 @Service("UserInfoService")
 public class UserInfoService implements IUserInfoService {
 	
