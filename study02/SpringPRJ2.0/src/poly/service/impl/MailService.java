@@ -22,6 +22,8 @@ public class MailService implements IMailService {
 	
 	private Logger log = Logger.getLogger(this.getClass()); // 로그를 찍기 위한 메소드
 	
+	//구글 이메일로 바꾸고 싶으면 호스트를 gmail로 수정해 주면 된다.
+	// 아이디에 이차 암호가 걸려 있다면 비밀번호 혹은 아이디 오류가 뜰 수도 있다.
 	final String host = "smtp.naver.com";
 	final String user = "아이디";
 	final String password = "비밀번호";
