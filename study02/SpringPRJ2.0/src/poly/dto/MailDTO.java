@@ -2,9 +2,9 @@ package poly.dto;
 // DB 정보를 받아온다.
 public class MailDTO {
 	
-	private String toMail;
-	private String title;
-	private String contents;
+	private String toMail; // 받는 사람
+	private String title; // 제목
+	private String contents; // 내용
 	
 	public String getToMail() {
 		return toMail;
