@@ -46,6 +46,7 @@ public class MailService implements IMailService {
 		props.put("mail.smtp.host", host);
 		props.put("mail.smtp.auth", "true");
 		
+		//서비스 로직
 		Session session = Session.getDefaultInstance(props, new javax.mail.Authenticator() {
 			protected PasswordAuthentication getPasswordAuthentication() {
 				return new PasswordAuthentication(user, password);
