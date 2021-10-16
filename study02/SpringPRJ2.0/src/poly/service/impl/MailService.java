@@ -53,6 +53,7 @@ public class MailService implements IMailService {
 			}
 		});
 		
+		// try , catch 문을 통한 예외 처리
 		try {
 			MimeMessage message = new MimeMessage(session);
 			message.setFrom(new InternetAddress(user));
