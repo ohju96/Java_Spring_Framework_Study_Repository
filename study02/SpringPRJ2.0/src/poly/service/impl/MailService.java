@@ -72,9 +72,10 @@ public class MailService implements IMailService {
 			log.info("[ERROR]" + this.getClass().getName() + ".doSendMail :" + e);
 		}
 		
+		//로그를 찍어야 어디까지 실행 됐는지 알 수 있다.
 		log.info(this.getClass().getName() + ".doSendMail end ! ");
 		
-		
+		// res를 리턴해 준다.
 		return res;
 	}
 
