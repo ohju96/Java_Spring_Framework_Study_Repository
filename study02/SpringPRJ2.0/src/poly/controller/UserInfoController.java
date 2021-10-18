@@ -20,6 +20,7 @@ public class UserInfoController {
 
 	private Logger log = Logger.getLogger(this.getClass());
 
+	//UserInfoService를 사용하기 위해 리소스로 불러온다.
 	@Resource(name = "UserInfoService")
 	private IUserInfoService userInfoService;
 
