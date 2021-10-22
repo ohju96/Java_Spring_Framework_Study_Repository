@@ -32,6 +32,7 @@ public class UserInfoController {
 		return "/user/UserRegForm";
 	}
 
+	// 네임을 꼭 정해줘야 한다. 그래야 스프링이 구분을 할 수 있다.
 	@RequestMapping(value = "user/insertUserInfo")
 	public String insertUserInfo(HttpServletRequest request, HttpServletResponse response, ModelMap model)
 			throws Exception {
