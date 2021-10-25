@@ -17,6 +17,7 @@ import poly.util.EncryptUtil;
 @Service("UserInfoService")
 public class UserInfoService implements IUserInfoService {
 	
+	// 싱글톤 방식으로 네임 값이 일치하는 객체를 메모리에 올린다.
 	@Resource(name="UserInfoMapper")
 	private UserInfoMapper userInfoMapper;
 	
