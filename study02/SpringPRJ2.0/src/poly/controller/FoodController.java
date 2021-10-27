@@ -19,7 +19,7 @@ public class FoodController {
 	private IFoodService foodService;
 	
 	@RequestMapping(value = "food/getFoodInfoFromWEB")
-	public String getMovieInfoFromWEB(HttpServletRequest request, HttpServletResponse response, ModelMap model)throws Exception {
+	public String getFoodInfoFromWEB(HttpServletRequest request, HttpServletResponse response, ModelMap model)throws Exception {
 		
 		log.info(this.getClass().getName() + ".getFoodInfoFromWEB start !");
 		
