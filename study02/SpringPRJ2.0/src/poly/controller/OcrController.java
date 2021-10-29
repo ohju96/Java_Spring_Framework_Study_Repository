@@ -76,7 +76,9 @@ public class OcrController {
 			
 			pDTO.setFileName(saveFileName);//저장되는 파일명
 			pDTO.setFilePath(saveFilePath);//저장되는 경로
-			
+			pDTO.setExt(ext);//저장되는 경로
+			pDTO.setOrg_file_name(originalFileName);//저장되는 경로
+			pDTO.setReg_id("admin");
 			OcrDTO rDTO = ocrService.getReadforImageText(pDTO);
 			
 			if(rDTO == null) {
