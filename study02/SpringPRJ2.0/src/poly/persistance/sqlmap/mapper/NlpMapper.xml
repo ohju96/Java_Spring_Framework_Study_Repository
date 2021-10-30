@@ -11,6 +11,7 @@
 		NLP_DICTIONARY
 		WHERE 1=1
 
+<!-- 가 ~ 깋 까지 적어주는 이유는 가, 갸, 거, 겨 ....깋 로 마무리가 되기 때문이다.ㄱ 시작 가, ㄱ 끝 깋 -->
 		<if test='word.equals("ㄱ")'>
 			<![CDATA[
 			AND WORD >= '가' AND WORD <= '깋'
