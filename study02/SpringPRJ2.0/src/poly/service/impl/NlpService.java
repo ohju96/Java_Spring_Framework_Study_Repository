@@ -32,7 +32,7 @@ public class NlpService implements INlpService {
 	private Map<String, List<NlpDTO>> NLP_DIC = new HashMap<String, List<NlpDTO>>();
 	
 	@Override
-	@PostConstruct
+	@PostConstruct //이 함수 부터 실행을 해 줍니다.
 	public void getWord() throws Exception {
 
 		log.info(this.getClass().getName() + ".getWord start !!");
