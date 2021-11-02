@@ -41,7 +41,6 @@ public class NlpController {
 		
 		//분석할 문장
 		String text_message = CmmUtil.nvl(request.getParameter("text_message"));
-		log.info("######################"+text_message);
 		
 		NlpDTO pDTO = new NlpDTO();
 		
