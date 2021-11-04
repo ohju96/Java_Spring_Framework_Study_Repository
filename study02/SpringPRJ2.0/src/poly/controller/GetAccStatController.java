@@ -17,6 +17,7 @@ import poly.dto.AccStatDTO;
 import poly.service.IGetAccStatService;
 import poly.util.CmmUtil;
 
+//컨트롤러 마다 이름을 정해줘야 한다.
 @Controller("GetAccStatController")
 public class GetAccStatController {
 
@@ -107,6 +108,7 @@ public class GetAccStatController {
 		
 		return rMap;
 	}
+	
 	
 	@RequestMapping(value = "AccStat/accStatForAjax")
 	public String accStatForAjax(HttpServletRequest request, HttpServletResponse response, ModelMap model)
