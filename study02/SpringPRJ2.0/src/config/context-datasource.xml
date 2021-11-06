@@ -11,7 +11,7 @@
         
         <!-- Oracle DB, MySQL은 연결하는 코드가 다르다. -->
         <property name="driverClass" value="oracle.jdbc.driver.OracleDriver" />
-        <property name="jdbcUrl" value="jdbc:oracle:thin:@localhost:1521:xe" />
+        <property name="jdbcUrl" value="jdbc:oracle:thin:@localhost:1521:xe" /><!-- 오라클 다운로드 할 때 정식 버전이 아니라 xe이다. -->
 	    <property name="user" value="WEB_USER" /> <!-- 오라클 계정 : 아이디 -->
 	    <property name="password" value="1234" /> <!-- 오라클 계정 : 비밀번호 -->
 	    <property name="initialPoolSize" value="5" />
