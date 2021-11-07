@@ -59,6 +59,7 @@ public class NlpController {
 			
 		}
 		
+		//jsp 단으로 넘겨준다.
 		model.addAttribute("res", res);
 		
 		log.info(this.getClass().getName() + ".wordAnalysis end !");
