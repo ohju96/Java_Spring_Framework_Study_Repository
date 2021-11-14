@@ -12,6 +12,7 @@ import poly.dto.AccStatDTO;
 import poly.persistance.mapper.IAccStatMapper;
 import poly.service.IAccStatService;
 
+//서비스를 알려주고 네이밍을 붙여준다.
 @Service("AccStatService")
 public class AccStatService implements IAccStatService {
 
