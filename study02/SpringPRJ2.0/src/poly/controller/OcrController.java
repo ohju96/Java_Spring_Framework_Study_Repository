@@ -22,7 +22,7 @@ import poly.util.FileUtil;
 @Controller("OcrController")
 public class OcrController {
 	private Logger log = Logger.getLogger(this.getClass());
-	// 리소스를 통해 OcrService를 사용할 수 있게 해 준다..
+	// 리소스를 통해 OcrService를 사용할 수 있게 해 준다.
 	@Resource(name = "OcrService")
 	private IOcrService ocrService;
 	
