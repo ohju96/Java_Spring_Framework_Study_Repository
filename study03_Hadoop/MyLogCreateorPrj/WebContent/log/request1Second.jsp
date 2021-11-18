@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+    <!-- 해당 프로젝트를 War 파일로 내보내서 하둡에서 실행시킵니다. -->
 <!DOCTYPE html>
 <html>
 <head>

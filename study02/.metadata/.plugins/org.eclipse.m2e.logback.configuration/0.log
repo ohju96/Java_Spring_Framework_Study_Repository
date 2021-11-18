@@ -3248,3 +3248,7 @@ org.eclipse.core.runtime.CoreException: Could not resolve artifact com.oracle:oj
 2021-11-17 15:01:02,589 [Worker-68: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\ohjuproject_file\study02\SpringPRJ2.0\src\main\resources
 2021-11-17 15:01:02,589 [Worker-68: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
 2021-11-17 15:01:02,590 [Worker-68: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\ohjuproject_file\study02\SpringPRJ2.0\src\test\resources
+2021-11-17 15:01:36,028 [Worker-62: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-11-17 15:01:36,029 [Worker-62: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\ohjuproject_file\study02\SpringPRJ2.0\src\main\resources
+2021-11-17 15:01:36,030 [Worker-62: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-11-17 15:01:36,031 [Worker-62: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\ohjuproject_file\study02\SpringPRJ2.0\src\test\resources
