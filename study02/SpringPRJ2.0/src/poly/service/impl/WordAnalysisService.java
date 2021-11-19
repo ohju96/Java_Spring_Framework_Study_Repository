@@ -21,9 +21,11 @@ import poly.service.INewsCollectService;
 import poly.service.IWordAnalysisService;
 import poly.util.CmmUtil;
 
+// 어노테이션 서비스를 해주고 서비스 이름을 지정해 주기
 @Service("WordAnalysisService")
 public class WordAnalysisService implements IWordAnalysisService {
 
+	//로그
 	private Logger log = Logger.getLogger(this.getClass());
 	
 	@Resource(name = "NewsCollectService")
@@ -139,14 +141,14 @@ public class WordAnalysisService implements IWordAnalysisService {
 				"https://news.naver.com/main/read.naver?mode=LSD&mid=shm&sid1=105&oid=366&aid=0000774467"
 				);
 		
-	//문장의 명사를 추출하기 위한 형태소 분석 실행
+	//문장의 명사를 추출하기 위한 형태소 분석 실행합니다.
 		List<String> rList = this.doWordNouns(newContext);
 		
 		if(rList == null) {
 			rList = new ArrayList<String>();
 		}
 		
-		//추출된 명사 모음(리스트)의 명사 단어별 빈도수 계산
+		//추출된 명사 모음(리스트)의 명사 단어별 빈도수를 계산합니다.
 		Map<String, Integer> rMap = this.doWordCount(rList);
 		
 		if(rMap == null) {
